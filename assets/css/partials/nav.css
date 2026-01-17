@@ -4,7 +4,7 @@
 .nav {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10;
   background-color: var(--navbar-background);
 }
 
@@ -12,23 +12,23 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 6.25rem;
+  height: 5.25rem;
   font-family: "Playfair Display", sans-serif;
 }
 
 /* ---------- Logo ---------- */
 .nav__logo {
   color: var(--white-color);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: -7px;
-  z-index: 1;
+  z-index: 10;
 }
 
 /* ---------- Lista de links ---------- */
 .nav__list {
   position: fixed;
-  top: 6.25rem;
+  top: 5.25rem;
   right: 0;
   width: 100vw;
   height: 50vh;
@@ -69,14 +69,14 @@
   border: none;
   background: none;
   cursor: pointer;
-  z-index: 1;
+  z-index: 10;
   padding-block: 1.5rem;
 }
 
 .nav__hamburguer-line {
   display: block;
-  width: 2.5rem;
-  height: 0.313rem;
+  width: 2.25rem;
+  height: 0.2rem;
   margin-top: 0.438rem;
 
   background: var(--white-color);
@@ -85,7 +85,7 @@
 }
 
 .nav.active .nav__hamburguer-line:nth-of-type(1) {
-  transform: translateY(0.75rem) rotate(45deg);
+  transform: translateY(0.638rem) rotate(45deg);
 }
 
 .nav.active .nav__hamburguer-line:nth-of-type(2) {
@@ -93,7 +93,7 @@
 }
 
 .nav.active .nav__hamburguer-line:nth-of-type(3) {
-  transform: translateY(-0.75rem) rotate(-45deg);
+  transform: translateY(-0.638rem) rotate(-45deg);
 }
 
 /* ==============================
